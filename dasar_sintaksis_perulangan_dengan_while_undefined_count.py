@@ -2,23 +2,23 @@
 Program perulangan membaca buku dengan while sampai paham
 """
 
-jumlah_buku = 10
+book_count = 10
 print("Perintah Ibu membaca buku")
-jumlah_buku_dibaca_dan_dipahami = 0
-print(f"Jumlah buku yang sudah dibaca dan dipahami {jumlah_buku_dibaca_dan_dipahami}\n")
-total_jumlah_baca = 0
+understood_count = 0
+print(f"Jumlah buku yang sudah dibaca dan dipahami {understood_count}\n")
+read_count = 0
 
-while total_jumlah_baca < jumlah_buku * 2:
-    total_jumlah_baca += 1
-    if jumlah_buku_dibaca_dan_dipahami == 9:
-        print(f"Buku ke - {jumlah_buku_dibaca_dan_dipahami + 1} belum paham")
+while read_count < book_count * 2:
+    read_count += 1
+    if understood_count == 9:
+        print(f"Buku ke - {understood_count + 1} belum paham")
     else:
-        jumlah_buku_dibaca_dan_dipahami += 1
-        print(f"Buku ke - {jumlah_buku_dibaca_dan_dipahami} sudah dibaca dan dipaham")
+        understood_count += 1
+        print(f"Buku ke - {understood_count} sudah dibaca dan dipaham")
 
-print(f"\nJumlah buku yang sudah dibaca dan dipahami {jumlah_buku_dibaca_dan_dipahami}")
-if jumlah_buku_dibaca_dan_dipahami == jumlah_buku:
+print(f"\nJumlah buku yang sudah dibaca dan dipahami {understood_count}")
+if understood_count == book_count:
     print("Bu, Semua buku sudah dipahami")
 else:
-    print(f"Bu, tidak semua buku bisa dipahami, Budi hanya bisa memahami {jumlah_buku_dibaca_dan_dipahami} buku")
+    print(f"Bu, tidak semua buku bisa dipahami, Budi hanya bisa memahami {understood_count} buku")
 
